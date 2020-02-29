@@ -7,16 +7,9 @@ notepad.addEventListener('keyup', function (event) {
     });
 });
 
-chrome.storage.local.get('notepad', function (data) {
-    console.log('notepad',data);
+chrome.storage.local.get(['notepad', 'text', 'background'], function (data) {
+    console.log('notepad data', data);
     notepad.innerHTML = data.notepad;
-});
-
-chrome.storage.local.get('text', function (data) {
-    console.log('text',data);
-    // notepad.backgroundColod = data.text;
-});
-chrome.storage.local.get('background', function (data) {
-    console.log('background',data);
-    // notepad.backgroundColod = data.text;
+    notepad.style.color = data.text;
+    notepad.style.backgroundColor = data.background;
 });

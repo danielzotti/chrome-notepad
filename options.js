@@ -1,12 +1,20 @@
 const options = document.querySelectorAll('select');
 
-options.forEach(e => {
-    e.addEventListener('change', function (event) {
-        console.log(event);
-        const item = {
-            key: event.target.name,
-            value: event.target.value
-        };
+chrome.storage.local.get(['text', 'background'], function (data) {
+    console.log('notepad data', data);
+    options.forEach(option => {
+        // console.log(option.value);
+        // console.log(option.name);
+        // console.log(data[option.name]);
+        option.value = data[option.name];
+    });
+});
+
+options.forEach(option => {
+    option.addEventListener('change', function (event) {
+        // console.log(event);
+        const item = {};
+        item[event.target.name] = event.target.value;
         saveItem(item);
     });
 });
@@ -16,3 +24,4 @@ function saveItem(item) {
         console.log("Option saved", item);
     });
 }
+
