@@ -1,0 +1,21 @@
+{
+  "name": "Chrome Notepad",
+  "version": "1.0",
+  "description": "A simple notepad to be used as a Chrome extension",
+  "permissions": ["storage","declarativeContent"],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "255": "images/notepad-icon.png"
+    }
+  },
+  "icons": {
+    "255": "images/notepad-icon.png"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
