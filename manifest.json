@@ -6,11 +6,11 @@
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "255": "images/notepad-icon.png"
+      "255": "images/chrome-notepad-icon.png"
     }
   },
   "icons": {
-    "255": "images/notepad-icon.png"
+    "255": "images/chrome-notepad-icon.png"
   },
   "options_page": "options.html",
   "background": {
