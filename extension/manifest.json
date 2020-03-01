@@ -1,7 +1,8 @@
 {
   "name": "Chrome Notepad",
   "version": "1.0",
-  "description": "A simple notepad to be used as a Chrome extension",
+  "author": "Daniel Zotti",
+  "description": "A simple notepad with bold, italic and underline to be used as a Chrome extension",
   "permissions": ["storage","declarativeContent"],
   "page_action": {
     "default_popup": "popup.html",
