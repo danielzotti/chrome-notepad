@@ -1,22 +1,32 @@
 {
-  "name": "Chrome Notepad",
-  "version": "1.1",
   "author": "Daniel Zotti",
-  "description": "A simple notepad with bold, italic and underline to be used as a Chrome extension",
-  "permissions": ["storage","declarativeContent"],
-  "page_action": {
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Chrome notepad",
     "default_popup": "popup.html",
     "default_icon": {
       "255": "images/chrome-notepad-icon.png"
     }
   },
+  "description": "A simple notepad with bold, italic and underline to be used as a Chrome extension",
   "icons": {
     "255": "images/chrome-notepad-icon.png"
   },
+  "manifest_version": 2,
+  "name": "Chrome Notepad",
   "options_page": "options.html",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
   },
-  "manifest_version": 2
+  "permissions": [
+    "storage",
+    "declarativeContent"
+  ],
+  "version": "1.2"
 }
