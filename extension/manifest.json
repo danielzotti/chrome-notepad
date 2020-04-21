@@ -30,7 +30,6 @@
     "open_in_tab": false
   },
   "permissions": [
-    "storage",
-    "declarativeContent"
+    "storage"
   ]
 }
