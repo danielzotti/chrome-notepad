@@ -1,0 +1,24 @@
+{
+  "name": "chrome-notepad",
+  "version": "1.8.0",
+  "description": "A simple notepad with bold, italic and underline to be used as a Chrome extension",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/chrome": "^0.0.299"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielzotti/chrome-notepad.git"
+  },
+  "keywords": [
+    "chrome",
+    "notepad",
+    "chrome-extension"
+  ],
+  "author": "Daniel Zotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielzotti/chrome-notepad/issues"
+  },
+  "homepage": "https://github.com/danielzotti/chrome-notepad#readme"
+}
